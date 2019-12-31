@@ -705,6 +705,14 @@
     "@babel/plugin-transform-react-jsx-self" "^7.7.4"
     "@babel/plugin-transform-react-jsx-source" "^7.7.4"
 
+"@babel/runtime-corejs2@^7.0.0":
+  version "7.7.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.7.7.tgz#44885957b275a5fd70413142eda9cff4662847ac"
+  integrity sha512-P91T3dFYQL7aj44PxOMIAbo66Ag3NbmXG9fseSYaXxapp3K9XTct5HU9IpTOm2D0AoktKusgqzN5YcSxZXEKBQ==
+  dependencies:
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.2"
+
 "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
@@ -1971,6 +1979,11 @@ core-js-compat@^3.6.0:
   dependencies:
     browserslist "^4.8.2"
     semver "7.0.0"
+
+core-js@^2.6.5:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
+  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
 core-js@^3.4.0:
   version "3.6.0"
@@ -5950,6 +5963,13 @@ react-is@^16.8.1:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
+
+react-on-rails@11.3.0:
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/react-on-rails/-/react-on-rails-11.3.0.tgz#edebfd4b98f1fa110e4d5ce92ef699d7dccf8fb2"
+  integrity sha512-3eyoZe+tysxdMy7IZ7Ca6gar268iX1NOJy7hJH8CW9dfNIFWbeWXTVa3G91wrt5xo2toWZLCoj51WcBWw0Rm3Q==
+  dependencies:
+    "@babel/runtime-corejs2" "^7.0.0"
 
 react@^16.12.0:
   version "16.12.0"
