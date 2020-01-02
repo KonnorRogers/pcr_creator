@@ -13,13 +13,15 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <div class='text-center relative mx-auto' data-type='container'>
+      <%= render 'layouts/header' %>
 
-    <main class='text-center mx-auto mt-6'>
-      <%= yield %>
-    </main>
+      <main class='mt-6'>
+        <%= yield %>
+      </main>
 
-    <%= render 'layouts/footer' %>
+      <%= render 'layouts/footer' %>
+    </div>
     <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
