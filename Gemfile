@@ -50,6 +50,7 @@ group :development do
   gem 'guard', '~> 2.14'
   gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
   gem 'pry', '~> 0.10.4'
+  gem 'pry-rails', '~> 0.3.4'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
