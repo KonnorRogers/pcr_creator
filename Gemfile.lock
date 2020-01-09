@@ -82,6 +82,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dotenv (2.7.5)
+    dotenv-rails (2.7.5)
+      dotenv (= 2.7.5)
+      railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     ffi (1.11.3)
     foreman (0.86.0)
@@ -244,6 +248,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise (~> 4.2)
+  dotenv-rails
   foreman (~> 0.86)
   guard (~> 2.14)
   guard-minitest (~> 2.4, >= 2.4.6)

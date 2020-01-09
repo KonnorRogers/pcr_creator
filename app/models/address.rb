@@ -1,6 +1,6 @@
 class Address < ApplicationRecord
-  belongs_to :patient
-  belongs_to :report
+  # belongs_to :patient
+  # belongs_to :report
 
   validates :room_number, length: { maximum: 50 }
 

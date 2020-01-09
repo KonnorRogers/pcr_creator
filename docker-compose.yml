@@ -2,6 +2,10 @@ version: '3'
 services:
   db:
     image: postgres:11.6
+    environment:
+      - PG_HOST=db
+      - PG_USERNAME=postgres
+      - PG_PASSWORD=''
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:
@@ -13,3 +17,14 @@ services:
       - "3000:3000"
     depends_on:
       - db
+
+  guard:
+    build: .
+    command: bundle exec guard --no-interactions
+    tty: true
+    volumes:
+      - .:/myapp
+    environment:
+      RAILS_ENV: test
+    # depends_on:
+    #   - db

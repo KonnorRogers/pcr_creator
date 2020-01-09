@@ -26,6 +26,23 @@ ActiveRecord::Schema.define(version: 2020_01_09_030247) do
     t.string "zip_code"
   end
 
+  create_table "hospitals", force: :cascade do |t|
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "phone_number"
+    t.integer "trauma_level"
+    t.string "website"
+    t.string "name"
+    t.integer "zip"
+    t.index ["latitude", "longitude"], name: "index_hospitals_on_latitude_and_longitude"
+  end
+
   create_table "insurances", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
