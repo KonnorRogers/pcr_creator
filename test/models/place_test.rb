@@ -63,5 +63,20 @@ class PlaceTest < ActiveSupport::TestCase
       refute @place.valid?
     end
   end
+
+  test 'should not save a new place if zip code is not 5 characters' do
+    @place.zip_code = '0216'
+
+    @place2 = @place
+    @place2.zip_code = '064221'
+
+    assert_no_difference 'Place.count' do
+      @place.save
+      @place2.save
+      refute @place.valid?
+      refute @place2.valid?
+    end
+  end
+
 end
 
