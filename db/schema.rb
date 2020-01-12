@@ -15,17 +15,6 @@ ActiveRecord::Schema.define(version: 2020_01_09_030247) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "addresses", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "room_number"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.string "country"
-    t.string "zip_code"
-  end
-
   create_table "insurances", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -41,6 +30,17 @@ ActiveRecord::Schema.define(version: 2020_01_09_030247) do
   create_table "patients", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "room_number"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.string "zip_code"
   end
 
   create_table "reports", force: :cascade do |t|
